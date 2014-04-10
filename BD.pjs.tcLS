@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{13bca79c-4352-485e-8b5c-1c1be0e2ee18}">
+				<Prp name="relpath" type="S" value="Tests\FACSuite\VP.mds.tcLS"/>
+			</Node>
+			<Node name="{1c7ae031-3948-421a-947f-f256944bd92c}">
+				<Prp name="relpath" type="S" value="FACSimulator\FACSimulator.mds.tcLS"/>
+			</Node>
+			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
+				<Prp name="default project" type="S" value="{BB1D3D5D-54E1-4DD8-9C60-9E582611F8BB}"/>
+			</Node>
+			<Node name="{34054ade-bbd9-484d-8a28-d9437c90bf87}">
+				<Prp name="relpath" type="S" value="Components\FACSuite\FACSuite Components.mds.tcLS"/>
+			</Node>
+			<Node name="{bb1d3d5d-54e1-4dd8-9c60-9e582611f8bb}">
+				<Prp name="relpath" type="S" value="Framework\Framework.mds.tcLS"/>
+			</Node>
+			<Node name="{deb5b6b3-a615-4379-91f6-ee715af3713f}">
+				<Prp name="relpath" type="S" value="FACSimulator\FACSimulator.mds.tcLS"/>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{0733D7BA-9A35-4AFB-8CAB-5D5E56378C97}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables"/>
+		</Node>
+		<Prp name="signature" type="S" value="{71078212-FAEB-4856-A901-B237C89E6B5C}"/>
+	</Node>
+</Nodes>
